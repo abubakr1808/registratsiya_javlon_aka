@@ -10,7 +10,7 @@ class Ondoading extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff121212),
+      backgroundColor: Color.fromARGB(255, 25, 25, 25),
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 15.sp,
