@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_lleft_text_back.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_text_next.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading_uch.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/intro/view/start_screen.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/start_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class OndoadingIkki extends StatelessWidget {
-  const OndoadingIkki({super.key});
+class OndoadingUch extends StatelessWidget {
+  const OndoadingUch({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -29,11 +30,11 @@ class OndoadingIkki extends StatelessWidget {
               ),
             ),
             Image.asset(
-              "assets/images/Frame 162.png",
+              "assets/images/Frame 161.png",
             ),
             Spacer(flex: 2),
             Text(
-              "Create daily routine",
+              "Orgonaize your tasks",
               style: TextStyle(
                 color: Color(0xffFFFFFF),
                 fontSize: 21.sp,
@@ -45,14 +46,14 @@ class OndoadingIkki extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "        In Uptodo  you can create your\n",
+                    text: "        You can organize your daily tasks by \n",
                     style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16.sp,
                     ),
                   ),
                   TextSpan(
-                    text: "personalized routine to stay productive",
+                    text: "adding your tasks into separate categories",
                     style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16.sp,
@@ -78,7 +79,7 @@ class OndoadingIkki extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => OndoadingUch(),
+                        builder: (context) => StartScreen(),
                       ),
                     );
                   },

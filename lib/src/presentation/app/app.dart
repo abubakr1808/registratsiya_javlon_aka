@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/splash_screen_view.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/intro/view/splash_screen_view.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/login_register.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/splash_screen_view.dart';
 // import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading.dart';
 // import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/start_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
@@ -13,7 +15,8 @@ class App extends StatelessWidget {
     return ResponsiveSizer(
       builder: (p0, p1, p2) => MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: SplashScreenView(),
+        // home: SplashScreenView(),
+        home: LoginRegister(),
         // home: Ondoading(),
         // home: StartScreen(),
       ),

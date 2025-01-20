@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_lleft_text_back.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_text_next.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading_ikki.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/intro/view/ondoading_ikki.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading_ikki.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class Ondoading extends StatelessWidget {
@@ -17,7 +18,6 @@ class Ondoading extends StatelessWidget {
           vertical: 15.sp,
         ),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.ends,
           children: [
             Align(
               alignment: Alignment.centerLeft,
