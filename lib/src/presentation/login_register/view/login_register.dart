@@ -160,11 +160,6 @@ class _LoginRegisterState extends State<LoginRegister> {
                         builder: (context) => FingerScanner(),
                       ),
                     );
-                  } else {
-                    // Agar matn kiritilmagan bo'lsa, hech narsa qilmaslik
-                    ScaffoldMessenger.of(context).showSnackBar(
-                      SnackBar(content: Text('tuldirin textfieldni')),
-                    );
                   }
                 },
                 child: Container(
