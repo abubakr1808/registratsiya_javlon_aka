@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_lleft_text_back.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_text_next.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/start_screen.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/intro/view/ondoading_ikki.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading_ikki.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class OndoadingUch extends StatelessWidget {
-  const OndoadingUch({super.key});
+class Ondoading extends StatelessWidget {
+  const Ondoading({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xff121212),
+      backgroundColor: Color.fromARGB(255, 25, 25, 25),
       body: Padding(
         padding: EdgeInsets.symmetric(
           horizontal: 15.sp,
@@ -29,11 +30,11 @@ class OndoadingUch extends StatelessWidget {
               ),
             ),
             Image.asset(
-              "assets/images/Frame 161.png",
+              "assets/images/Group 182.png",
             ),
             Spacer(flex: 2),
             Text(
-              "Orgonaize your tasks",
+              "Manage your tasks",
               style: TextStyle(
                 color: Color(0xffFFFFFF),
                 fontSize: 21.sp,
@@ -45,14 +46,15 @@ class OndoadingUch extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text: "        You can organize your daily tasks by \n",
+                    text:
+                        "You can easily manage all of your daily\n              ",
                     style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16.sp,
                     ),
                   ),
                   TextSpan(
-                    text: "adding your tasks into separate categories",
+                    text: "tasks in DoMe for free",
                     style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16.sp,
@@ -78,7 +80,7 @@ class OndoadingUch extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => StartScreen(),
+                        builder: (context) => OndoadingIkki(),
                       ),
                     );
                   },

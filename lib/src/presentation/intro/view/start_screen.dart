@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/login_register.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 class StartScreen extends StatelessWidget {
@@ -56,24 +57,34 @@ class StartScreen extends StatelessWidget {
               child: ListView.builder(
                 itemCount: 2,
                 itemBuilder: (context, index) {
-                  return Container(
-                    margin: EdgeInsets.all(9),
-                    width: 90.w,
-                    height: 6.5.h,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
-                      color: containecolor[index],
-                      border: Border.all(
-                        color: Color(0xff8875FF),
-                        width: 0.4.h,
+                  return GestureDetector(
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => LoginRegister(),
+                        ),
+                      );
+                    },
+                    child: Container(
+                      margin: EdgeInsets.all(9),
+                      width: 90.w,
+                      height: 6.5.h,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(5),
+                        color: containecolor[index],
+                        border: Border.all(
+                          color: Color(0xff8875FF),
+                          width: 0.4.h,
+                        ),
                       ),
-                    ),
-                    child: Center(
-                      child: Text(
-                        texlogin[index],
-                        style: TextStyle(
-                          fontSize: 16.sp,
-                          color: Color(0xffFFFFFF),
+                      child: Center(
+                        child: Text(
+                          texlogin[index],
+                          style: TextStyle(
+                            fontSize: 16.sp,
+                            color: Color(0xffFFFFFF),
+                          ),
                         ),
                       ),
                     ),

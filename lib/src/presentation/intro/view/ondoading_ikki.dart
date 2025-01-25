@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_lleft_text_back.dart';
 import 'package:registratsiya_javlon_aka/src/companents/button_text_next.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading_ikki.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/intro/view/ondoading_uch.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading_uch.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
-class Ondoading extends StatelessWidget {
-  const Ondoading({super.key});
+class OndoadingIkki extends StatelessWidget {
+  const OndoadingIkki({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +18,6 @@ class Ondoading extends StatelessWidget {
           vertical: 15.sp,
         ),
         child: Column(
-          // mainAxisAlignment: MainAxisAlignment.ends,
           children: [
             Align(
               alignment: Alignment.centerLeft,
@@ -30,11 +30,11 @@ class Ondoading extends StatelessWidget {
               ),
             ),
             Image.asset(
-              "assets/images/Group 182.png",
+              "assets/images/Frame 162.png",
             ),
             Spacer(flex: 2),
             Text(
-              "Manage your tasks",
+              "Create daily routine",
               style: TextStyle(
                 color: Color(0xffFFFFFF),
                 fontSize: 21.sp,
@@ -46,15 +46,14 @@ class Ondoading extends StatelessWidget {
               text: TextSpan(
                 children: [
                   TextSpan(
-                    text:
-                        "You can easily manage all of your daily\n              ",
+                    text: "        In Uptodo  you can create your\n",
                     style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16.sp,
                     ),
                   ),
                   TextSpan(
-                    text: "tasks in DoMe for free",
+                    text: "personalized routine to stay productive",
                     style: TextStyle(
                       color: Color(0xffFFFFFF),
                       fontSize: 16.sp,
@@ -80,7 +79,7 @@ class Ondoading extends StatelessWidget {
                     Navigator.push(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => OndoadingIkki(),
+                        builder: (context) => OndoadingUch(),
                       ),
                     );
                   },

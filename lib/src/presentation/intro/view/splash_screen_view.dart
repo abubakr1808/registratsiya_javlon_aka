@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/intro/view/ondoading.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/ondoading.dart';
 
 class SplashScreenView extends StatelessWidget {
   const SplashScreenView({super.key});
