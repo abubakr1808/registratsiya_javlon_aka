@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/index_screen_home/view/home_screen_entre_screen.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/index_screen_home/view/hoome_screen_entre_scren_nabbar.dart';
 import 'package:registratsiya_javlon_aka/src/presentation/login_register/view/register_screen.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -31,7 +31,7 @@ class FingerScanner extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeScreenEntreScreen(),
+                      builder: (context) => HomeScreenEntreScreenNavbar(),
                     ),
                   );
                 },

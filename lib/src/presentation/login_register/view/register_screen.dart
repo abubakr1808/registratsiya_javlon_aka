@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:registratsiya_javlon_aka/src/presentation/index_screen_home/view/home_screen_entre_screen.dart';
+// import 'package:registratsiya_javlon_aka/src/presentation/index_screen_home/view/home_screen_entre_screen.dart';
+import 'package:registratsiya_javlon_aka/src/presentation/index_screen_home/view/hoome_screen_entre_scren_nabbar.dart';
 // import 'package:registratsiya_javlon_aka/src/presentation/index_screen_home/view/home_screen_entre_screen.dart';
 // import 'package:registratsiya_javlon_aka/src///presentation/login_register/ui/ui.dart';
 import 'package:registratsiya_javlon_aka/src/presentation/login_register/widget/coumn_textfield.dart';
@@ -65,7 +66,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                   Navigator.push(
                     context,
                     MaterialPageRoute(
-                      builder: (context) => HomeScreenEntreScreen(),
+                      builder: (context) => HomeScreenEntreScreenNavbar(),
                     ),
                   );
                 },
